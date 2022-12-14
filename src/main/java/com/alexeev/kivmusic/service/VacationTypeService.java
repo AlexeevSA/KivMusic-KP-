@@ -1,0 +1,15 @@
+package com.alexeev.kivmusic.service;
+
+import com.alexeev.kivmusic.models.VacationEntity;
+import com.alexeev.kivmusic.models.VacationTypeEntity;
+
+import java.util.List;
+import java.util.Optional;
+
+public interface VacationTypeService {
+    List<VacationTypeEntity> findAllVacationType();
+    Optional<VacationTypeEntity> findById(Long id);
+    VacationTypeEntity saveVacationType(VacationTypeEntity vacationType);
+    VacationTypeEntity updateVacationType(VacationTypeEntity vacationType);
+    void deleteVacationType(Long id);
+}
