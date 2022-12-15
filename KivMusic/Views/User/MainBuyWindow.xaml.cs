@@ -208,7 +208,7 @@ namespace KivMusic.Views.User
 
         private void btnLogOut_Click(object sender, RoutedEventArgs e)
         {
-            NavigationService.GoBack();
+            NavigationService.Navigate(new Sign_in());
         }
 
         private void btnPay_Click(object sender, RoutedEventArgs e)

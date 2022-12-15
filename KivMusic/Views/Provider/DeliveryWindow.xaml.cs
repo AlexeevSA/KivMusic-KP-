@@ -282,9 +282,9 @@ namespace KivMusic.Views.Provider
             {
                 if (dtDelevery.SelectedItems.Count != 0)
                 {
-                    var warehouseInfo = dtDelevery.SelectedCells[3];
-                    var productInfo = dtDelevery.SelectedCells[7];
-                    var providerInfo = dtDelevery.SelectedCells[9];
+                    var warehouseInfo = dtDelevery.SelectedCells[2];
+                    var productInfo = dtDelevery.SelectedCells[6];
+                    var providerInfo = dtDelevery.SelectedCells[8];
                     cmbWarehouse.SelectedValue = Convert.ToInt32((warehouseInfo.Column.GetCellContent(warehouseInfo.Item) as TextBlock).Text);
                     cmbProduct.SelectedValue = Convert.ToInt32((productInfo.Column.GetCellContent(productInfo.Item) as TextBlock).Text);
                     cmbProvider.SelectedValue = Convert.ToInt32((providerInfo.Column.GetCellContent(providerInfo.Item) as TextBlock).Text);
