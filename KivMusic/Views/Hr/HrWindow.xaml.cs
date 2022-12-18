@@ -199,7 +199,7 @@ namespace KivMusic.Views.Hr
                 var cellinfo = dtSickType.SelectedCells[0];
                 using (var client = new HttpClient())
                 {
-                    var endpoint = new Uri(uri + "/typecard");
+                    var endpoint = new Uri(uri + "/sicktype");
                     var newSickType = new SickType()
                     {
                         id = Convert.ToInt32((cellinfo.Column.GetCellContent(cellinfo.Item) as TextBlock).Text),

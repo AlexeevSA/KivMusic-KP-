@@ -38,7 +38,7 @@
                     Header="id"
                     Binding="{Binding id}"
                     IsReadOnly="True"
-                    Visibility="Hidden"
+                    MaxWidth="0"
                     />
                 <DataGridTextColumn 
                     Header="Описание"
